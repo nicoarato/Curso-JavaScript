@@ -29,7 +29,7 @@ window.addEventListener('load',function(){
 
     var start = document.querySelector("#start");
     start.addEventListener('click', function(){
-        invervalo(); // iniciar el intervalo.
+        tiempo = invervalo(); // iniciar el intervalo.
     });
 
 });
