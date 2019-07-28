@@ -10,11 +10,11 @@ window.addEventListener('load',function(){
     var tiempo = setInterval(function(){
             console.log("Setinterval ejecutandose");
             var esH1 = document.querySelector("h1");
-            if(esH1.style.fontSize == "50px")
+            if(esH1.style.color == "black")
             {
-                esH1.style.fontSize = "25px";
+                esH1.style.color = "red";
             }else{
-                esH1.style.fontSize = "50px";
+                esH1.style.color = "black";
             }
         }, 1000);
         return tiempo;
@@ -31,5 +31,14 @@ window.addEventListener('load',function(){
     start.addEventListener('click', function(){
         tiempo = invervalo(); // iniciar el intervalo.
     });
+
+
+    var tiempo2 = this.setTimeout(function(){
+        console.log("setTimeout se ejecuta una vez");
+
+        var h1_cambiado= document.querySelector('h1');
+        h1_cambiado.style.color="red";
+    }, 2000);
+
 
 });
