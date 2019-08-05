@@ -26,12 +26,17 @@ var div_janet = document.querySelector('#janet');
     })
     .then(data => {
         console.log(data);
+    })
+    //capturar errores
+    .catch(error => {
+        console.log(error);
     });
+    
 
 ;
 
 function getUsuarios(){
-    return fetch('https://reqres.in/api/users');
+    return fetch('https://reqres.i1n/api/users');
 }
 
 function getJanet(){
