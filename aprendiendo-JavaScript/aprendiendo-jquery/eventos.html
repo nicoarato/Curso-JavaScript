@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/02-eventos.js"> </script>
+    
+    <style>
+    #caja{
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+        background: #ccc;
+        transition: 300ms all;
+    }
+
+/*
+    #caja:hover{
+        
+        background: red;
+        cursor: pointer;
+    }
+*/
+    input{
+        padding: 10px;
+        width: 300px;
+        font-size: 20px;
+    }
+
+    #datos{
+        padding: 10px;
+        border: 2px dashed black;
+        width: 250px;
+        height: 50px;
+        display: none;
+    }
+
+    #sigueme{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background: cyan;
+        opacity: 0.5;
+        border-radius: 999px;
+        border: 1px solid black;
+    }
+
+    </style>
+    <title>jQuery</title>
+</head>
+<body>
+     <h1>Aprendiendo Jquery - Eventos</h1>
+
+    <div id="sigueme">
+
+    </div>
+
+    <div id="caja">
+        soy una caja
+    </div>
+
+    <form action="">
+        <input type="text" id="nombre">
+    </form>
+    <div id="datos"></div>
+
+    <div class="elecciones">
+            <iframe src='https://elections-widget.tn.com.ar/' frameborder='0' height='950px' width='100%'></iframe>
+    </div>
+
+</body>
+</html>
