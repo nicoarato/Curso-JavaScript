@@ -41,4 +41,23 @@ $(document).ready(function(){
         //$(".caja-efectos").toggle("shake", "slow");
         $(".caja-efectos").toggle("shake", 4000);
     });
+
+    //el tooltip utiliza el texto definido en title.
+    $(document).tooltip();
+
+    
+    //dialog, tambien utiliza el title.
+   // $(".popup").dialog();
+
+    $("#lanzar-popup").click(function(){
+        $(".popup").dialog();
+    });
+
+    //datepicker
+    $("#calender").datepicker();
+
+
+    //tabs
+    $("#pestanas").tabs();
+
 });
