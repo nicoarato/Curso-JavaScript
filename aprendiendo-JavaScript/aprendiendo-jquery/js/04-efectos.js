@@ -8,6 +8,7 @@ $(document).ready(function(){
         //$('#caja').show('normal');
         //$('#caja').fadeIn('normal');
         //$('#caja').fadeTo('normal',1); //opacidad
+        $('#caja').slideDown('normal');
     });
 
     $('#ocultar').click(function(){
