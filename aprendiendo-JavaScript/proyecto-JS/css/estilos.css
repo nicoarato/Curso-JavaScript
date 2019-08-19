@@ -17,6 +17,11 @@ body{
 a {
     text-decoration: none;
 }
+
+header{
+    margin-bottom: 50px;
+}
+
 #global{
     width: 65%;
     margin: 0px auto;
@@ -175,4 +180,8 @@ footer{
     margin-top: 50px;
     line-height: 47px;
     text-align: center;
+}
+
+.bxwrapper, .bx-viewport{
+    height: 250px !important;
 }
