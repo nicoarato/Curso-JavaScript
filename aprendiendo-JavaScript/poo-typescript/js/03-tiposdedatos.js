@@ -1,0 +1,13 @@
+var cadena = "hola mundo";
+cadena = 78;
+var numero = 12;
+var vf = false;
+var cualquiera = "hola";
+cualquiera = 8432;
+var lenguajes = ["php", "java", "c++"];
+var leng = ["php", "java", "c++", 54];
+var years = [12, 15, 20, 0];
+var anios = ["mama", 12, 'papa'];
+console.log(cadena, numero, vf, cualquiera, lenguajes, leng, years, anios);
+var variable = "HOLA MUNDO";
+console.log(variable);

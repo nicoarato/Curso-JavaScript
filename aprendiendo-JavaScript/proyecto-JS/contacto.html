@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
+         <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+   
+    <!--Validacion de formulario-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script> 
+    
+
+
+
     <title>Proyecto con JavaScript</title>
     <!--estilos css-->
     <link rel="stylesheet" type="text/css"  href="css/estilos.css">
     <link id="theme" rel="stylesheet" type="text/css"  href="css/green.css">
 
-
-
-    
-    <!--Slider-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    
-    <!--moment js-->
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
     <!--Mis scripts-->
     <script src="js/main.js"></script>
 </head>
@@ -53,20 +53,44 @@
         </nav>
     </header>
 
-    <!-- Slider-->
-    <div id="slider">
-        <div class="bxslider">
-            <div><img src="img/hojas.jpg" title="Hojas verdes"></div>
-            <div><img src="img/cielo.jpg" title="Cielo azul"></div>
-            <div><img src="img/rojo.jpg" title="Lapachos"></div>
-        </div>
-    </div>
-
     <!-- Contenido-->
 
     <section id="content">
-        <div id="posts">
-            <!-- Posts desde json-->
+        <div id="box">
+            <!-- formulario -->
+            <div id="formulario">
+                <h2>Contacto</h2>
+                <form action="#" method="post" id="form_contacto">
+                    
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" data-validation="alphanumeric">
+                
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" data-validation="alphanumeric">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" data-validation="email">
+                    
+
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo" data-validation="required">
+                        <option value="man">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+
+                    
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" id="fecha" name="fecha" data-validation="date">
+
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" data-validation="number required" data-validation-allowing="range[1;130]">
+
+                    <input type="submit" value="Enviar">
+
+                </form>
+
+            </div>
+            
         </div>
 
         <aside id="sidebar">

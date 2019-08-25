@@ -108,4 +108,18 @@ $(document).ready(function(){
             $("#reloj").html(reloj);
        }, 1000);
     }
+
+    //validacion
+    if(window.location.href.indexOf('contacto')> -1){
+        $.validate({
+            lang: 'es'
+        });
+
+        
+    }
+
+   /*  $("input[name='fecha']").datepicker({
+        dateFormat: 'dd-mm-yy'
+    });
+ */
 });
