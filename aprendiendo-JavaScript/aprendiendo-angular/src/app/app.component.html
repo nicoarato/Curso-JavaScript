@@ -1,7 +1,8 @@
 <h1>Bienvenidos a Angular</h1>
 <p>Esto es una primera prueba</p>
 
-<videojuego></videojuego>
-<videojuego></videojuego>
-<videojuego></videojuego>
-<videojuego></videojuego>
+<button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar Games</button>
+<button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar Games</button>
+<videojuego *ngIf="mostrar_videojuegos"></videojuego>
+<zapatillas></zapatillas>
+<cursos></cursos> 
