@@ -16,18 +16,18 @@ export class VideojuegoComponent implements OnInit, DoCheck {
     }
 
     ngOnInit(){
-        console.log("OnInit ejecutado");
+        //console.log("OnInit ejecutado");
     }
 
     ngDoCheck(){
-        console.log("Docheck ejecutado");
+       // console.log("Docheck ejecutado");
     }
 
     cambiarTitulo(){
-        this.titulo = "Nuevo Titulo2 del componente";
+       // this.titulo = "Nuevo Titulo2 del componente";
     }
 
     ngOnDestroy(){
-        console.log("On destroy ejecutado");
+       // console.log("On destroy ejecutado");
     }
 }

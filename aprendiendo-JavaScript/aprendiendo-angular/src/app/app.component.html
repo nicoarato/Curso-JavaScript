@@ -1,8 +1,18 @@
-<h1>Bienvenidos a Angular</h1>
-<p>Esto es una primera prueba</p>
+<div  [ngStyle]="{'background': config.fondo,
+                    'padding': '20px',
+                    'border': '5px solid black',
+                    'border-color': config.color
+                }">
+    <h1>Bienvenidos a Angular : {{title}}</h1>
+    <p>{{descripcion}}</p>
 
-<button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar Games</button>
-<button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar Games</button>
-<videojuego *ngIf="mostrar_videojuegos"></videojuego>
-<zapatillas></zapatillas>
-<cursos></cursos> 
+    <!--
+    <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar Games</button>
+    <button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar Games</button>
+    <videojuego *ngIf="mostrar_videojuegos"></videojuego>
+    <cursos></cursos> 
+-->
+    <zapatillas></zapatillas>
+    
+
+</div>
