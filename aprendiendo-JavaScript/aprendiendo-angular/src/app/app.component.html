@@ -6,13 +6,28 @@
     <h1>Bienvenidos a Angular : {{title}}</h1>
     <p>{{descripcion}}</p>
 
+    <nav>
+        <a [routerLink]="['/home']" [routerLinkActive]="['activado']"> Home </a>
+        &nbsp;
+        <a [routerLink]="['/zapatillas']" [routerLinkActive]="['activado']"> Zapatillas </a>
+        &nbsp;
+        <a [routerLink]="['/cursos']" [routerLinkActive]="['activado']"> Cursos </a>
+        &nbsp;
+        <a [routerLink]="['/videojuego']" [routerLinkActive]="['activado']"> Videojuegos </a>
+    
+    </nav>
+
     <!--
     <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar Games</button>
     <button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar Games</button>
     <videojuego *ngIf="mostrar_videojuegos"></videojuego>
     <cursos></cursos> 
--->
     <zapatillas></zapatillas>
-    
+    -->
+
+
+    <!--GRacias a esta estiqueta funciona el
+    routing-->
+    <router-outlet></router-outlet>
 
 </div>

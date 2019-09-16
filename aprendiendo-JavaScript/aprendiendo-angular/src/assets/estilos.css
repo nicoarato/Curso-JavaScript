@@ -11,3 +11,9 @@
 .subrayado{
     text-decoration: underline;
 }
+
+.activado{
+    background: black;
+    color: white;
+    font-size: 18px;
+}
