@@ -12,6 +12,7 @@ import { VideojuegoComponent} from './videojuego/videojuego.component';
 import {CursosComponent} from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
 //import { ModuleWithProviders } from '@angular/compiler/src/core';
+import { ExternoComponent } from './externo/externo.component';
 
 //Array de rutas
 const appRoutes: Routes = [
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     {path: 'videojuego', component: VideojuegoComponent},
     {path: 'cursos', component: CursosComponent},
     {path: 'cursos/:nombre/:followers', component: CursosComponent},
-    {path: '**', component: HomeComponent}
+    {path: 'externo', component: ExternoComponent},
+    {path: '**', component: HomeComponent},
 ];
 
 //Exportar el modulo del router
