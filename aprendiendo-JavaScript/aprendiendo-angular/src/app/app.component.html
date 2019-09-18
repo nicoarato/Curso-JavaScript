@@ -5,6 +5,7 @@
                 }">
     <h1>Bienvenidos a Angular : {{title}}</h1>
     <p>{{descripcion}}</p>
+    <hr>
 
     <nav>
         <a [routerLink]="['/home']" [routerLinkActive]="['activado']"> Home </a>
@@ -16,6 +17,7 @@
         <a [routerLink]="['/videojuego']" [routerLinkActive]="['activado']"> Videojuegos </a>
     
     </nav>
+    <hr>
 
     <!--
     <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar Games</button>
